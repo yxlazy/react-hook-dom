@@ -1,7 +1,7 @@
 ---
 hero:
-  title: react-hooks
-  desc: react-hooks site example
+  title: react-hook-dom
+  desc: react-hook-dom site example
   actions:
     - text: Getting Started
       link: /hooks
@@ -18,4 +18,4 @@ features:
 footer: Open-source MIT Licensed | Copyright © 2020<br />Powered by [dumi](https://d.umijs.org)
 ---
 
-## Hello react-hooks!
+## Hello react-hook-dom!

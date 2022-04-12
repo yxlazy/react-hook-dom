@@ -1,7 +1,18 @@
 {
-  "private": true,
-  "name": "react-hooks",
+  "name": "react-hook-dom",
   "version": "1.0.0",
+  "keywords": [
+    "react",
+    "hook",
+    "hooks",
+    "dom"
+  ],
+  "repository": "yanxiaolazy/react-hook-dom",
+  "author": {
+    "name": "yanxiaolazy",
+    "email": "1977735808@qq.com",
+    "url": "https://yanxiaolazy.github.io/react-hook-dom"
+  },
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",

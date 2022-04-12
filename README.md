@@ -1,4 +1,6 @@
-# react-hooks
+# react-hook-dom
+
+🌋Judge whether the element overflows and can scroll to the hooks collection at the specified position.
 
 ## Getting Started
 
