@@ -1,19 +1,26 @@
 ---
 nav:
-  title: Hooks
   path: /hooks
 ---
 
 ## useLoading
 
-Demo:
+useLoading is used to display loading before the request has returned.
+
+### Usage:
 
 ```typescript
 const [loading, exector] = useLoading(requestFn);
 ```
 
+### API
+
+```typescript
+const [loading, exector] = useLoading<T extends (...args: any[]) => any>(fn: T): [boolean, (...args: any[]) => Promise<void>];
+```
+
 ### Params
 
-| 参数      | 说明               | 类型       | 默认值 |
-| --------- | ------------------ | ---------- | ------ |
-| requestFn | 请求后端接口的函数 | `function` | -      |
+| Property  | Description        | Type       | Default |
+| --------- | ------------------ | ---------- | ------- |
+| requestFn | A promise function | `function` | -       |

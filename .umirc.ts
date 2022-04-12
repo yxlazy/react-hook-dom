@@ -11,4 +11,18 @@ export default defineConfig({
   dynamicImport: {},
   publicPath: process.env.NODE_ENV === 'production' ? '/react-hook-dom/' : '/',
   base: process.env.NODE_ENV === 'production' ? '/react-hook-dom/' : '/',
+  navs: [
+    {
+      title: 'Hooks',
+      path: '/hooks',
+    },
+  ],
+  menus: {
+    '/hooks': [
+      {
+        title: 'Hooks',
+        children: ['useComputeOverflow', 'useLoading'],
+      },
+    ],
+  },
 });
