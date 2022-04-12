@@ -1,23 +1,21 @@
 import { useCallback, useState } from 'react';
 
-type noop = (...args: any[]) => any;
-
-function useLoading<T extends noop>(fn: T) {
+function useLoading<T extends (...args: any[]) => any>(fn: T) {
   const [loading, setLoading] = useState(false);
 
   const exector = useCallback(
-    (...args) => {
+    async (...args) => {
       setLoading(true);
       try {
         // eslint-disable-next-line @typescript-eslint/no-invalid-this
-        fn.apply(this, args);
+        await fn.apply(this, args);
       } finally {
         setLoading(false);
       }
     },
     [fn],
   );
-  return [loading, exector];
+  return [loading, exector] as [boolean, (...args: any[]) => Promise<void>];
 }
 
 export default useLoading;
