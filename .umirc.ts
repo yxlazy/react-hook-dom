@@ -10,4 +10,5 @@ export default defineConfig({
   // more config: https://d.umijs.org/config
   dynamicImport: {},
   publicPath: process.env.NODE_ENV === 'production' ? '/react-hooks/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/react-hooks/' : '/',
 });
