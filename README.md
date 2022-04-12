@@ -31,7 +31,7 @@ Check the [documentation](https://yanxiaolazy.github.io/react-hook-dom/hooks/use
 - [x] useLoading
 - [ ] useScrollToBottom
 - [ ] useScrollToTop
-- [ ] useComputeOverflow
+- [x] useComputeOverflow
 - [ ] useScrollTo
 
 If you have more ideas about hooks, please mention issue or pull request.
