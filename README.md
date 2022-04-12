@@ -7,29 +7,31 @@
 Install dependencies,
 
 ```bash
-$ npm i
+npm i react-hook-dom
 ```
 
-Start the dev server,
+or
 
 ```bash
-$ npm start
+yarn add react-hook-dom
 ```
 
-Build documentation,
+## Usage
 
-```bash
-$ npm run docs:build
+```javascript
+import { useLoading } from 'react-hook-dom';
+
+const [loading, exector] = useLoading(requestFn);
 ```
 
-Run test,
+Check the [documentation](https://yanxiaolazy.github.io/react-hook-dom/hooks/use-loading) to learn more about hook and its usage.
 
-```bash
-$ npm test
-```
+## Hooks
 
-Build library via `father-build`,
+- [x] useLoading
+- [ ] useScrollToBottom
+- [ ] useScrollToTop
+- [ ] useComputeOverflow
+- [ ] useScrollTo
 
-```bash
-$ npm run build
-```
+If you have more ideas about hooks, please mention issue or pull request.
