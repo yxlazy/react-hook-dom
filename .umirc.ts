@@ -21,7 +21,7 @@ export default defineConfig({
     '/hooks': [
       {
         title: 'Hooks',
-        children: ['useComputeOverflow', 'useLoading'],
+        children: ['useComputeOverflow', 'useElementVisible', 'useLoading'],
       },
     ],
   },
